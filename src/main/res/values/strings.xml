@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+    <string name="splash_home">splash Home</string>
+    <string name="splash_welcometo">welcome Home</string>
+    <string name="splash_smarthome">smart Home</string>
+    <string name="authen_username">Username</string>
+    <string name="authen_password">Password</string>
+    <string name="authen_login">Login</string>
+    <string name="authen_Signup">Sign Up to Register</string>
+    <string name="menuhome">Home</string>
+    <string name="menuappliances">Appliances</string>
+    <string name="menusecurity">Security</string>
+    <string name="menusettings">Settings</string>
+    <string name="menuabout">About</string>
+    <string name="aboutus">About</string>
+    <string name="menulogout">Logout</string>
+    <string name="open_drawer">open navigation drawer</string>
+    <string name="close_drawer">close navigation drawer</string>
+    <string name="door">Door</string>
+    <string name="livingroom">Living Room</string>
+    <string name="diningroom">Dining Room</string>
+    <string name="bedroom">Bedroom</string>
+    <string name="bathroom">Bathroom</string>
+    <string name="frontdoor">Front Door</string>
+    <string name="backdoor">Back Door</string>
+    <string name="doormicro">Door Micro</string>
+    <string name="commandhere">Type Manual Command</string>
+    <string name="off">OFF</string>
+    <string name="roomlight">Light</string>
+    <string name="roomfan">Fan</string>
+    <string name="roomAC">AC</string>
+    <string name="ToggleOn">ON</string>
+</resources>

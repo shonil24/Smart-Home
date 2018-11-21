@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    tools:context="com.smarthome.app.AuthenticationActivity">
+    <!--gravity for placement of blue image to bottom but its child so code in parents block-->
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="83dp"
+        android:layout_above="@+id/imagelayout"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/authen_home_image"
+        android:contentDescription="@string/splash_home"/>
+
+    <ImageView
+        android:layout_width="171dp"
+        android:layout_height="34dp"
+        android:layout_above="@+id/imagelayout"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/authen_smarthome_text"
+        android:contentDescription="@string/splash_home"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+        android:background="@drawable/authen_back"
+        android:id="@+id/imagelayout"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/splash_smarthome"/>
+
+    <RelativeLayout
+        android:layout_width="218dp"
+        android:layout_height="240dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="@string/authen_username"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColorHint="@color/colorWhite"
+            android:theme="@style/backborder" />
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="@string/authen_password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/colorWhite"
+            android:theme="@style/backborder" />
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="219dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/password"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/authen_login_butn"
+            android:text="@string/authen_login"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:elevation="6dp" />
+
+        <Button
+            android:id="@+id/Signup"
+            android:layout_width="219dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/Login"
+            android:background="@color/colorApp"
+            android:text="@string/authen_Signup"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

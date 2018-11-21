@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smarthome.app.doorActivity"
+    android:background="@color/homeback">
+
+    <ImageButton
+        android:id="@+id/doorfrontimg"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/frontdoor"
+        android:src="@drawable/door_front"
+        android:layout_marginTop="90dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@drawable/imagebtn_back"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/frontdoortxt"
+        android:layout_width="118dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/doorfrontimg"
+        android:layout_below="@+id/doorfrontimg"
+        android:text="@string/frontdoor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/doorbackimg"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/backdoor"
+        android:src="@drawable/door_back"
+        android:layout_below="@+id/frontdoortxt"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@drawable/imagebtn_back"
+        android:padding="1dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/backdoortxt"
+        android:layout_width="118dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/doorbackimg"
+        android:layout_below="@+id/doorbackimg"
+        android:text="@string/backdoor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/doormicroimg"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:contentDescription="@string/doormicro"
+        android:layout_below="@+id/backdoortxt"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:elevation="6dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/door_micro"
+        android:layout_centerHorizontal="true"/>
+    
+    <EditText
+        android:id="@+id/command_here"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/doormicroimg"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/commandhere"/>
+
+</RelativeLayout>

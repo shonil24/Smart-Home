@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smarthome.app.diningActivity"
+    android:background="@color/homeback">
+
+    <ImageView
+        android:id="@+id/roomslightimg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/roomlight"
+        android:src="@drawable/rooms_light"
+        android:layout_marginTop="90dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/toggledinlit"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/roomslightimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/roomslightimg"
+        android:gravity="center"
+        android:text="@string/off"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dinroomlighttxt"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/roomslightimg"
+        android:text="@string/roomlight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/roomsfanimg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/roomfan"
+        android:src="@drawable/rooms_fan"
+        android:layout_below="@id/dinroomlighttxt"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="4dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/toggledinfan"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/roomsfanimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/roomsfanimg"
+        android:gravity="center"
+        android:text="@string/off"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dinroomfantxt"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/roomsfanimg"
+        android:text="@string/roomfan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/dinroommicro"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:contentDescription="@string/doormicro"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/door_micro"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/bath_command_here"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/dinroommicro"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/commandhere"/>
+
+
+
+</RelativeLayout>

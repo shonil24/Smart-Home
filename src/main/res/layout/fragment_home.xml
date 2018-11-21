@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homeback"
+    tools:context="com.smarthome.app.homefragment">
+
+    <!--  <android.support.v7.widget.Toolbar
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:id="@+id/toolbar"
+          android:background="@color/colorPrimary"
+          app:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
+          got commented as for toolbar new layout is made (step 14)-->
+    <ImageButton
+        android:id="@+id/doorimg"
+        android:layout_width="156dp"
+        android:layout_height="91dp"
+        android:contentDescription="@string/door"
+        android:src="@drawable/home_door"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@drawable/imagebtn_back"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/doortxt"
+        android:layout_width="48dp"
+        android:layout_height="26dp"
+        android:text="@string/door"
+        android:textStyle="bold"
+        android:layout_below="@+id/doorimg"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"/>
+    <!--scale and adjust so image gets fit to center and scales down
+    padding so image gets small and background is image for giving white back with border-->
+
+    <ImageButton
+        android:id="@+id/livroomimg"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/livingroom"
+        android:src="@drawable/home_livingroom"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/doortxt"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@drawable/imagebtn_back"
+        android:padding="10dp"/>
+
+    <!--margin start means from left no need for setting alignparentstart,its bydefault-->
+    <!--layout below means its below the element whose id is specified-->
+
+    <ImageButton
+        android:id="@+id/diningroomimg"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/doortxt"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/imagebtn_back"
+        android:contentDescription="@string/diningroom"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home_diningroom" />
+
+    <!--align parent end,margin end means to align from right-->
+    <!--Start=left,end=right-->
+    <TextView
+        android:id="@+id/livingtxt"
+        android:layout_width="118dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/livroomimg"
+        android:layout_below="@+id/livroomimg"
+        android:text="@string/livingroom"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/diningtxt"
+        android:layout_width="122dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/diningroomimg"
+        android:layout_below="@+id/diningroomimg"
+        android:text="@string/diningroom"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!--For both textview living,dining ==>> aligning them to center
+    to their previous relative element by getting their align position i.e
+     layout_alignEnd to align to right side of their respective prev
+     linked or refered(using layoutbelow id)element
+     E.g Living textview linked to its image,image position is set so setting
+     the textview position using alignend of prev id
+
+     once its align use gravity center with it so that it also comes in center
+     alignEnd/alignStart and gravitycenter both needs to be used for centering
+      based on their prev link relative elements using their respective ids-->
+
+    <ImageButton
+        android:id="@+id/bedroomimg"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/bedroom"
+        android:src="@drawable/home_bedroom"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/livingtxt"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@drawable/imagebtn_back"
+        android:padding="10dp"/>
+
+    <ImageButton
+        android:id="@+id/bathroomimg"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/diningtxt"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/imagebtn_back"
+        android:contentDescription="@string/bathroom"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home_bathroom" />
+
+    <TextView
+        android:id="@+id/bedroomtxt"
+        android:layout_width="118dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/bedroomimg"
+        android:layout_below="@+id/bedroomimg"
+        android:text="@string/bedroom"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/bathroomtxt"
+        android:layout_width="122dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/bathroomimg"
+        android:layout_below="@+id/bathroomimg"
+        android:text="@string/bathroom"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</RelativeLayout>
+

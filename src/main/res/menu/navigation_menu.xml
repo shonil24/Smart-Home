@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:title="@string/menuhome" />
+        <item
+            android:title="@string/menuappliances"
+            android:id="@+id/appliances" />
+        <item
+            android:title="@string/menusecurity"
+            android:id="@+id/security" />
+        <item
+            android:title="@string/menusettings"
+            android:id="@+id/settings" />
+        <item
+            android:id="@+id/about"
+            android:title="@string/menuabout"/>
+        <item
+            android:id="@+id/logout"
+            android:title="@string/menulogout" />
+    </group>
+</menu>
+    <!--  android:icon="@drawable/menuhome" -->

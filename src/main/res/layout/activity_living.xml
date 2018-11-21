@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smarthome.app.diningActivity"
+    android:background="@color/homeback">
+
+    <ImageView
+        android:id="@+id/roomslightimg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/roomlight"
+        android:src="@drawable/rooms_light"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/togglelivlit"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/off"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp"
+        android:layout_alignTop="@id/roomslightimg"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/roomslightimg"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/livroomlighttxt"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/roomslightimg"
+        android:layout_below="@+id/roomslightimg"
+        android:gravity="center"
+        android:text="@string/roomlight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="6dp"/>
+
+    <ImageView
+        android:id="@+id/roomsfanimg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/roomfan"
+        android:src="@drawable/rooms_fan"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="4dp"
+        android:layout_alignTop="@+id/roomslightimg"
+        android:layout_toStartOf="@+id/toggledinfan"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:id="@+id/toggledinfan"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/off"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp"
+        android:layout_alignTop="@id/togglelivlit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"/>
+    <!--alignParentEnd mainmethod to get to right side with marginEnd-->
+
+    <ImageView
+        android:id="@+id/roomslightimg2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/roomlight"
+        android:src="@drawable/rooms_light"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:layout_below="@id/livroomlighttxt"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="20dp"/>
+    <!--layout_below is one cod needed and thats it ret all copy of above code or row-->
+
+    <TextView
+        android:id="@+id/togglelivlit2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/off"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp"
+        android:layout_alignTop="@id/roomslightimg2"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/roomslightimg2"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/livroomlighttxt2"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/roomslightimg2"
+        android:layout_below="@+id/roomslightimg2"
+        android:gravity="center"
+        android:text="@string/roomlight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="6dp"/>
+
+    <ImageView
+        android:id="@+id/roomsfanimg2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/roomfan"
+        android:src="@drawable/rooms_fan"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="4dp"
+        android:layout_alignTop="@+id/roomslightimg2"
+        android:layout_toStartOf="@+id/toggledinfan2"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:id="@+id/toggledinfan2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/off"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp"
+        android:layout_alignTop="@id/togglelivlit2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"/>
+    <!--alignParentEnd mainmethod to get to right side with marginEnd-->
+
+    <TextView
+        android:id="@+id/livroomfantxt2"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/roomsfanimg2"
+        android:layout_below="@+id/roomsfanimg2"
+        android:gravity="center"
+        android:text="@string/roomfan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="6dp"/>
+
+    <TextView
+        android:id="@+id/livroomfantxt"
+        android:layout_width="60dp"
+        android:layout_height="26dp"
+        android:layout_alignEnd="@+id/roomsfanimg"
+        android:layout_below="@+id/roomsfanimg"
+        android:gravity="center"
+        android:text="@string/roomfan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="6dp"/>
+
+    <Button
+        android:id="@+id/livroommicro"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:contentDescription="@string/doormicro"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/door_micro"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/bath_command_here"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/livroommicro"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/commandhere"/>
+
+</RelativeLayout>
